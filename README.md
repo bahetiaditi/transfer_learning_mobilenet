@@ -7,20 +7,7 @@ This project segments skin lesions in images using a pretrained MobileNet as an 
 ISIC 2016 dataset with preprocessed images (128x128 pixels) including 900 training and 379 test images along with their segmented masks.
 
 ## Project Structure
-audio_classification_transformer/
-│
-├── src/
-│   ├── __init__.py
-│   ├── model.py        # Contains model definitions
-│   ├── dataset.py      # Custom dataset and dataloader definitions
-│   ├── train.py        # Script for running training experiments
-│   ├── experiments.py  # Definitions of experiment functions
-│   └── utils.py        # Utility functions for training and evaluation
-│
-├── requirements.txt    # Project dependencies
-│
-└── README.md           # Project overview and setup instructions
-
+```
 project/
 |
 ├── models/ # Model definitions
@@ -35,7 +22,7 @@ project/
 ├── evaluate.py # Model evaluation script
 ├── notebook.ipynb # Jupyter notebook with project details
 └── README.md # Documentation of the project
-
+```
 ## Experiments
 
 1. **Feature Extraction:** Freezes the encoder and trains the decoder.

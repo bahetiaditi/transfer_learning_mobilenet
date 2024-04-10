@@ -7,21 +7,17 @@ This project segments skin lesions in images using a pretrained MobileNet as an 
 ISIC 2016 dataset with preprocessed images (128x128 pixels) including 900 training and 379 test images along with their segmented masks.
 
 ## Project Structure
-
 project/
-│
-├── models/ # Contains model definitions
-│ ├── mobilenet.py # Setup for MobileNet encoder
-│ └── segnet.py # SegNet model with custom decoder
-│
-├── utils/ # Utility functions for the project
+├── models/ # Model definitions
+│ ├── mobilenet.py # MobileNet encoder setup
+│ └── segnet.py # SegNet model including custom decoder
+├── utils/ # Utility functions
 │ ├── dataset.py # Custom dataset loader and transformations
 │ ├── metrics.py # Calculation of IoU and Dice scores
-│ └── visualization.py # Utilities for results visualization
-│
+│ └── visualization.py # Visualization tools for results
 ├── train_feature_extraction.py # Script for feature extraction experiment
 ├── train_fine_tuning.py # Script for fine-tuning experiment
-├── evaluate.py # Script for model evaluation
+├── evaluate.py # Model evaluation script
 ├── notebook.ipynb # Jupyter notebook with project details
 └── README.md # Documentation of the project
 

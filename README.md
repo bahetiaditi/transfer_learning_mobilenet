@@ -11,19 +11,19 @@ ISIC 2016 dataset with preprocessed images (128x128 pixels) including 900 traini
 project/
 │
 ├── models/ # Contains model definitions
-│ ├── mobilenet.py # MobileNet encoder setup
-│ └── segnet.py # SegNet model including the custom decoder
+│ ├── mobilenet.py # Setup for MobileNet encoder
+│ └── segnet.py # SegNet model with custom decoder
 │
 ├── utils/ # Utility functions for the project
 │ ├── dataset.py # Custom dataset loader and transformations
 │ ├── metrics.py # Calculation of IoU and Dice scores
-│ └── visualization.py # Visualization utilities for results
+│ └── visualization.py # Utilities for results visualization
 │
 ├── train_feature_extraction.py # Script for feature extraction experiment
 ├── train_fine_tuning.py # Script for fine-tuning experiment
-├── evaluate.py # Evaluation script for the model
-├── notebook.ipynb #Colab notebook
-└── README.md # Project documentation
+├── evaluate.py # Script for model evaluation
+├── notebook.ipynb # Jupyter notebook with project details
+└── README.md # Documentation of the project
 
 ## Experiments
 
@@ -37,4 +37,4 @@ project/
 
 ## Colab Notebook
 
-For a comprehensive walkthrough, refer to the [Colab Notebook](https://colab.research.google.com/drive/1stLYaJcLd6rMSpQer2L2gYzvDVHAVZnH?usp=sharing)
+For a comprehensive walkthrough, refer to the Colab notebook

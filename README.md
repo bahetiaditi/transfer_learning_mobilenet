@@ -7,14 +7,29 @@ This project segments skin lesions in images using a pretrained MobileNet as an 
 ISIC 2016 dataset with preprocessed images (128x128 pixels) including 900 training and 379 test images along with their segmented masks.
 
 ## Project Structure
+audio_classification_transformer/
+│
+├── src/
+│   ├── __init__.py
+│   ├── model.py        # Contains model definitions
+│   ├── dataset.py      # Custom dataset and dataloader definitions
+│   ├── train.py        # Script for running training experiments
+│   ├── experiments.py  # Definitions of experiment functions
+│   └── utils.py        # Utility functions for training and evaluation
+│
+├── requirements.txt    # Project dependencies
+│
+└── README.md           # Project overview and setup instructions
+
 project/
+|
 ├── models/ # Model definitions
 │ ├── mobilenet.py # MobileNet encoder setup
-│ └── segnet.py # SegNet model including custom decoder
+│ ├── segnet.py # SegNet model including custom decoder
 ├── utils/ # Utility functions
 │ ├── dataset.py # Custom dataset loader and transformations
 │ ├── metrics.py # Calculation of IoU and Dice scores
-│ └── visualization.py # Visualization tools for results
+│ ├── visualization.py # Visualization tools for results
 ├── train_feature_extraction.py # Script for feature extraction experiment
 ├── train_fine_tuning.py # Script for fine-tuning experiment
 ├── evaluate.py # Model evaluation script
